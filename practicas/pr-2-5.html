@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-5</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*EJERCICIO 1*/
+        .container{
+            width: 100vw;
+            min-width: 640px;
+            background-color:lemonchiffon;
+        }
+        input[name="dp"]{
+            height: 48px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        #nombre{
+            border: 1px solid #bbb; 
+        }
+        fieldset:nth-of-type(1) label{
+            display: inline-block;
+            width: 180px;
+        }
+        #email:valid{
+            background-color: #9fffd2;
+        }
+        input:invalid{
+            background-color: red;
+        }
+        #pwd, #apel{
+            background-color: lightpink;
+        }
+        table{
+            width: 100%;
+        }
+        td{
+            width: 50%;
+            height: 64px;
+            background-color: #cec2f9;
+            padding-left: 15px;
+        }
+        :checked{
+            box-shadow: 0 0 5px 2px plum;
+        }
+        button{
+            display: block;
+            text-align: center;
+            margin: 10px auto;
+            padding: 0 25px;
+            height: 48px;
+            background-color: red;
+            border-radius: 4px;
+        }
+        /*EJERCICIO 2*/
+        ul{
+            list-style: none;
+        }
+        ul:first-of-type li::before{
+            content: "**";
+            margin-right: 5px;
+            color: red;
+        }
+        ul:nth-of-type(2) li::before{
+            content: url('http://picsum.photos/50/50');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Pseudo clases en formularios</legend>
+                <label for="nombre">:autofocus</label>
+                <input type="text" name="dp" id="nombre" autofocus size="30" maxlength="30" placeholder="Nombre" tabindex="1">
+                <br>
+
+                <label for="apel">:required</label>
+                <input type="text" name="dp" id="apel" size="40" maxlength="39" placeholder="Apellidos" required>
+                <br>
+                
+                <label for="email">:valid/:invalid</label>
+                <input type="email" name="dp" id="email" size="50" maxlength="55" placeholder="mail@mail.com" required>
+                <br>
+
+                <label for="pwd">Password (8 min):</label>
+                <input type="password" name="dp" id="pwd" minlength="8" size="16">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>file, date, color, time</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="file">Archivo a subir:</label>
+                            <input type="file" name="" id="file">
+                        </td>
+                        <td>
+                            <label for="color">Elige color:</label>
+                            <input type="color" name="" id="color">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="date">Fecha pedido:</label>
+                            <input type="date" name="" id="date">
+                        </td>
+                        <td>
+                            <label for="time">Hora:</label>
+                            <input type="time" name="" id="time">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>:checked, :in-range /:out-of-range</legend>
+                <br>
+                Sexo: <input type="radio" name="sexo" id="hbr"><label for="hbr">Hombre</label>
+                <input type="radio" name="sexo" id="mjr"><label for="mjr">Mujer</label>
+                <br><br>
+
+                Aficiones: <input type="checkbox" name="" id="musica">
+                <label for="musica">Musica</label>
+                <input type="checkbox" name="" id="deportes">
+                <label for="deportes">Deportes</label>
+                <input type="checkbox" name="" id="lectura">
+                <label for="lectura">Lectura</label>
+                <input type="checkbox" name="" id="cocina">
+                <label for="cocina">Cocina</label>
+                <br><br>
+
+                <label for="edad">Edad (1-120):</label>
+                <input type="number" name="" id="edad" min="1" max="120">
+                <label for="sch">Buscar</label>
+                <input type="search" name="" id="sch">&#128269;
+                <br>
+            </fieldset>
+            <button type="submit">Enviar datos</button>
+        </form>
+    </div>
+    <div class="wrapper">
+        <ul>
+            <li>First element</li>
+            <li>Second element</li>
+            <li>Thirth element</li>
+            <li>Fourth element</li>
+        </ul>
+        <ul>
+            <li>First element</li>
+            <li>Second element</li>
+            <li>Thirth element</li>
+            <li>Fourth element</li>
+        </ul>
+        <ul>
+            <li>First element</li>
+            <li>Second element</li>
+            <li>Thirth element</li>
+            <li>Fourth element</li>
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+p{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+div{
+    width: 33%;
+    padding: 10px 0;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+.rojo{
+    background-color: #FF0000;
+}
+.verde{
+    background-color: #00FF00;
+}
+.azul{
+    background-color: #0000FF;
+}
+.rojo:hover{
+    background-color: #00FFFF;
+}
+.verde:hover{
+    background-color: #FF00FF;
+}
+.azul:hover{
+    background-color: #FFFF00;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-2</title>
+    <style>
+        * {
+            font-family: 'Arial Narrow', Arial, sans-serif, monospace;
+        }
+        body{
+            height: 100vh;
+        }
+        main{
+            float: left;
+            width: 100%;
+            height: 70%;
+        }
+        nav{
+            background-color: red;
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+        aside{
+            background-color: red;
+            width: 25%;
+            height: 100%;
+            float: right;
+        }
+        section{
+            background-color: #ccc;
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        h2, h3, .comentarios{
+            text-align: center;
+            margin: 2px;
+        }
+        aside p{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        aside *{
+            background: #bbb;
+            margin: 0 10px;
+        }
+        footer{
+            background-color: #666;
+            width: 100%;
+            height: 15vh;
+            clear: both;
+            text-align: center;
+            padding-top: 3vh;
+        }
+        ul{
+            list-style: none;
+            padding: 10px;
+            margin: 10px 10px;
+            background-color: #ccc;
+        }
+        ol{
+            list-style: none;
+            padding: 10px;
+            background-color: #ccc;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+        }
+        table{
+            table-layout: fixed;
+            width: 100%;
+            height: 120px;
+            background: #bbb;
+            border-collapse: collapse;
+        }
+        table td{
+            width: 100px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        table td img{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="http://picsum.photos/id/2/100" alt="No esta disponible la imagen"></td>
+                <td><h1>CABECERA</h1></td>
+                <td><img src="http://picsum.photos/id/3/100" alt="No esta disponible la imagen"></td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Opciones</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h2>Mi primer articulo</h2>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, architecto, ipsam nemo sequi aliquid blanditiis itaque corrupti alias voluptatum exercitationem ipsa illo maiores culpa, labore libero cumque reiciendis cum illum.</span></p>
+            </article>
+            <article>
+                <h2>Mi segundo articulo</h2>
+                <h3>Subtitulo 2 articulo</h3>
+                <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quia adipisci officiis aliquam ipsa molestias nobis nam ratione aperiam voluptate temporibus alias, in rem eligendi libero ipsum quidem perferendis expedita!</span></p>
+                <p class="comentarios">comentarios.</p>
+            </article>
+            <article>
+                <h2>Mi tercer articulo</h2>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa architecto aliquam quaerat, similique officiis eos eaque, odit quae cum obcaecati ullam consequatur modi pariatur? Expedita labore voluptas dolore autem?</span></p>
+                <p class="comentarios">comentarios.</p>
+            </article>
+        </section>
+        <aside>
+            <p>
+                Aqui tenemos nuestra sección de links interesantes
+                Elemento details<details>
+                    <summary> Lista de datos sumary:</summary>
+                    <ol>
+                        <li>opcion 1</li>
+                        <li>opcion 2</li>
+                        <li>opcion 3</li>
+                        <li>opcion 4</li>
+                    </ol>
+                </details>
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <p>©Todos los derechos reservados.</p>
+        Progreso<progress max="100"></progress>
+    </footer>
+</body>
+</html>

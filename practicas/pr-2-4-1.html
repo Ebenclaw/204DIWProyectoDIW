@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-4-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin-bottom: 50px;
+            margin: 10px;
+        }
+        body div{
+            margin-bottom: 65px;
+        }
+        p{
+            width: 200px;
+            height: 32px;
+            line-height: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .uno p, .cuatro p, .cinco p, .seis p{
+            background-color: #aaa;
+        }
+        .uno p:first-child{
+            background-color: blue;
+        }
+        .uno :last-child{
+            background-color: chocolate;
+        }
+
+        .dos ul{
+            width: 160px;
+            margin-left: 50px;
+        }
+        .dos li:nth-child(-3n+5){
+            background-color: red;
+        }
+        .dos li:nth-last-child(3){
+            background-color: rgb(179, 141, 141);
+        }
+
+        .tres p:only-child{
+            background-color: lawngreen;
+        }
+
+        .cuatro p:first-of-type{
+            background-color: lightskyblue;
+        }
+        .cuatro span{
+            margin-bottom: 10px;
+        }
+        .cuatro div:last-of-type{
+            width: 200px;
+            background-color: yellow;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .cinco p:nth-of-type(2){
+            background-color: mediumblue;
+            color: white;
+        }
+        .cinco :nth-last-child(3){
+            background-color: burlywood;
+            color: white;
+        }
+        .cinco div:last-of-type{
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .seis :only-of-type{
+            background-color: orange;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="uno">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+    <div class="dos">
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+            <li>Option 6</li>
+        </ul>
+    </div>
+    <div class="tres">
+        <p>single paragraph</p>
+    </div>
+    <div class="cuatro">
+        <p>Paragraph 1</p>
+        <span>text in span</span>
+        <p>Paragraph 2</p>
+        <strong>text in strong</strong>
+        <div>this is a div</div>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="cinco">
+        <p>Paragraph 1</p>
+        <span>text in span</span>
+        <p>Paragraph 2</p>
+        <strong>text in strong</strong>
+        <div>this is a div</div>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="seis">
+        <p>Paragraph 1</p>
+        <span>text in span</span>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+</body>
+</html>

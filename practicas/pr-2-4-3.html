@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-4-3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            /* margin-bottom: 700px; */
+        }
+        ul li{
+            width: 120px;
+            height: 48px;
+            display: inline-block;
+            margin-right: 50px;
+        }
+        li a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-family: Impact;
+            color: black;
+            text-align: center;
+            line-height: 48px;
+        }
+        li:nth-child(1) a{
+            background-color: deeppink;
+        }
+        li:nth-child(2) a{
+            background-color: rosybrown;
+        }
+        li:nth-child(3) a{
+            background-color: orangered;
+        }
+        #uno{
+            background-color: #bbb;
+            color: white;
+        }
+        #dos{
+            background-color: orange;
+        }
+        #tres{
+            background-color: cyan;
+        }
+        article a{
+            display: block;
+            width: 120px;
+            height: 32px;
+            background-color: green;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: Impact;
+            color:white;
+        }
+        article{
+            height: 200px;
+        }
+        article:target{
+            color: yellow !important;
+        }
+    </style>
+</head>
+<body>
+    <ul id="inicio">
+        <li><a href="#uno">PRIMERO</a></li>
+        <li><a href="#dos">SEGUNDO</a></li>
+        <li><a href="#tres">TERCERO</a></li>
+    </ul>
+    <article id="uno">
+        <h2>Articulo 1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad soluta corporis beatae ut, repellat corrupti magnam minus, error eos, repellendus accusamus quam officiis eum quibusdam asperiores veritatis maxime quasi odit?</p>
+        <a href="#inicio">Volver</a>
+    </article>
+    <article id="dos">
+        <h2>Articulo 2</h2>
+        <p>Repellat eaque molestias rem perferendis itaque dolor praesentium nihil sequi ex hic fugiat, exercitationem libero mollitia reprehenderit officia eveniet ducimus, cupiditate delectus nam velit! Illum, perferendis? Provident est quasi accusamus.</p>
+        <a href="#inicio">Volver</a>
+    </article>
+    <article id="tres">
+        <h2>Articulo 3</h2>
+        <p>Quia, ea cumque illum architecto enim aspernatur perferendis, consectetur optio earum pariatur minima totam sit? Quibusdam enim nihil, voluptatum maiores placeat laudantium id ipsa recusandae accusamus nesciunt. Deleniti, voluptate dolores.</p>
+        <a href="#inicio">Volver</a>
+    </article>
+</body>
+</html>

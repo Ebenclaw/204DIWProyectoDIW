@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr-1-1-1-color</title>
+    <style>
+        table {
+            width: 100%;
+            margin: 5% auto;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        td {
+            text-align: center;
+            height: 30px;
+        }
+
+        /*TABLA 1*/
+        .t1 td:nth-of-type(1) {
+            background-color: #FF0000;
+        }
+
+        .t1 td:nth-of-type(2) {
+            background-color: #00FF00;
+        }
+
+        .t1 td:nth-of-type(3) {
+            background-color: #0000FF;
+        }
+
+        /*TABLA 2*/
+        .t2 td:nth-of-type(1) {
+            background-color: #FFFF00;
+        }
+
+        .t2 td:nth-of-type(2) {
+            background-color: #FF0000;
+        }
+
+        .t2 td:nth-of-type(3) {
+            background-color: #FF00FF;
+        }
+
+        .t2 td:nth-of-type(4) {
+            background-color: #0000FF;
+        }
+
+        .t2 td:nth-of-type(5) {
+            background-color: #00FFFF;
+        }
+
+        .t2 td:nth-of-type(6) {
+            background-color: #00FF00;
+        }
+
+        /*TABLA 3*/
+        .t31 td:nth-of-type(1) {
+            background-color: #FFFF80;
+        }
+
+        .t31 td:nth-of-type(2) {
+            background-color: #FF8080;
+        }
+
+        .t31 td:nth-of-type(3) {
+            background-color: #FF80FF;
+        }
+
+        .t31 td:nth-of-type(4) {
+            background-color: #8080FF;
+        }
+
+        .t31 td:nth-of-type(5) {
+            background-color: #80FFFF;
+        }
+
+        .t31 td:nth-of-type(6) {
+            background-color: #80FF80;
+        }
+
+        .t32 td:nth-of-type(1) {
+            background-color: #FFFFC0;
+        }
+
+        .t32 td:nth-of-type(2) {
+            background-color: #FFC0C0;
+        }
+
+        .t32 td:nth-of-type(3) {
+            background-color: #FFC0FF;
+        }
+
+        .t32 td:nth-of-type(4) {
+            background-color: #C0C0FF;
+        }
+
+        .t32 td:nth-of-type(5) {
+            background-color: #C0FFFF;
+        }
+
+        .t32 td:nth-of-type(6) {
+            background-color: #C0FFC0;
+        }
+
+        /*TABLA 4*/
+        .t41 td:nth-of-type(1) {
+            background-color: #C0C000;
+        }
+
+        .t41 td:nth-of-type(2) {
+            background-color: #00C000;
+        }
+
+        .t41 td:nth-of-type(3) {
+            background-color: #C000C0;
+        }
+
+        .t41 td:nth-of-type(4) {
+            background-color: #0000C0;
+        }
+
+        .t41 td:nth-of-type(5) {
+            background-color: #00C0C0;
+        }
+
+        .t41 td:nth-of-type(6) {
+            background-color: #00C000;
+        }
+
+        .t42 td:nth-of-type(1) {
+            background-color: #808000;
+        }
+
+        .t42 td:nth-of-type(2) {
+            background-color: #008000;
+        }
+
+        .t42 td:nth-of-type(3) {
+            background-color: #800080;
+        }
+
+        .t42 td:nth-of-type(4) {
+            background-color: #000080;
+        }
+
+        .t42 td:nth-of-type(5) {
+            background-color: #008080;
+        }
+
+        .t42 td:nth-of-type(6) {
+            background-color: #008000;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <table class="t1">
+            <caption>Colores Primarios</caption>
+            <tr>
+                <td>#FF0000</td>
+                <td>#00FF00</td>
+                <td>#0000FF</td>
+            </tr>
+        </table>
+        <table class="t2">
+            <caption>Colores Secundarios</caption>
+            <tr>
+                <td>#FFFF00</td>
+                <td>#FF0000</td>
+                <td>#FF00FF</td>
+                <td>#0000FF</td>
+                <td>#00FFFF</td>
+                <td>#00FF00</td>
+            </tr>
+        </table>
+        <table class="t3">
+            <caption>Para hacer los colores mas claros Suma en hexadecimal</caption>
+            <tr class="t31">
+                <td>#FFFF80</td>
+                <td>#FF8080</td>
+                <td>#FF80FF</td>
+                <td>#8080FF</td>
+                <td>#80FFFF</td>
+                <td>#80FF80</td>
+            </tr>
+            <tr class="t32">
+                <td>#FFFFC0</td>
+                <td>#FFC0C0</td>
+                <td>#FFC0FF</td>
+                <td>#C0C0FF</td>
+                <td>#C0FFFF</td>
+                <td>#C0FFC0</td>
+            </tr>
+        </table>
+        <table>
+            <caption>Para hacer los colores mas oscuros Resta en hexadecimal</caption>
+            <tr class="t41">
+                <td>#C0C000</td>
+                <td>#00C000</td> <!---->
+                <td>#C000C0</td>
+                <td>#0000C0</td>
+                <td>#00C0C0</td>
+                <td>#00C000</td>
+            </tr>
+            <tr class="t42">
+                <td>#808000</td>
+                <td>#008000</td>
+                <td>#800080</td>
+                <td>#000080</td>
+                <td>#008080</td>
+                <td>#008000</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>

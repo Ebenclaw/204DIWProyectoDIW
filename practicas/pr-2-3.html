@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1rem;
+        }
+        /*EJERCICIO 1*/
+        .container ul {
+            width: 400px;
+            height: 300px;
+            background-color: black;
+            list-style: none;
+            padding: 10px;
+        }
+        .container a {
+            display: block;
+            margin-bottom: 5px;
+            width: 250px;
+            height: 48px;
+            background-color: rgb(245, 192, 255);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            line-height: 48px;  /*esto es para centrar el texto verticalmente*/
+            transition: all 0.5s ease;
+        }
+        .container a:hover {
+            background-color: rgb(156, 20, 184);
+            margin-left: 25px;
+        }
+        .container{
+            margin-bottom: 25PX;
+        }
+        /*EJERCICIO 2*/
+        .container2 ul {
+            width: 800px;
+            height: 70px;
+            background-color: black;
+            list-style: none;
+            padding: 10px;
+        }
+        .container2 li{
+            display: inline-block;
+            width: 120px;
+            height: 48px;
+            text-align: center;
+            margin: 0 10px;
+        }
+        .container2 a {
+            display: block;
+            color: white;
+            background-color: hotpink;
+            font-weight: bold;
+            line-height: 48px;   /*esto es para centrar el texto verticalmente*/
+            transition: all 1s ease;
+        }
+        .container2 a:link{
+            background-color:hotpink;
+            border-radius: 3px;
+        }
+        .container2 a:visited{
+            background: coral;
+        }
+        .container2 a:hover{
+            background-color:darkcyan;
+            color: black;
+        }
+        .container2 a:focus{  /*cambia de color si lo dejas pulsado*/
+            background: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="">Primera opcion</a></li>
+            <li><a href="">Segunda opcion</a></li>
+            <li><a href="">Tercera opcion</a></li>
+            <li><a href="">Cuarta opcion</a></li>
+            <li><a href="">Quinta opcion</a></li>
+        </ul>
+    </div>
+    <div class="container2">
+        <ul>
+            <li><a href="https://www.educa.jcyl.es/universidad/es?locale=es_ES">Educacyl</a></li>
+            <li><a href="https://www.educa.jcyl.es/alumnado/es?locale=es_ES">Deportes</a></li>
+            <li><a href="https://www.educa.jcyl.es/profesorado/es?locale=es_ES">Videos</a></li>
+            <li><a href="https://www.educa.jcyl.es/familias/es?locale=es_ES">Imagenes</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

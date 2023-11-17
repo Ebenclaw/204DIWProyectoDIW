@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr-1-2-3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Consolas, monospace;
+        }
+
+        table {
+            display: table;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table:nth-child(1) td {
+            border: 1px solid #000000;
+        }
+
+        .t2 td {
+            border: 2px solid #0000FF;
+            text-align: center;
+        }
+
+        tr {
+            height: 24px;
+        }
+
+        .t1 :nth-of-type(even) td {
+            background: red;
+        }
+
+        .t3 {
+            display: table;
+            width: 100%;
+            height: 32px;
+            border-collapse: collapse;
+        }
+        .t3--3{
+            display: table;
+            width: 100%;
+            height: 32px;
+            border-collapse: collapse;
+        }
+        .t3--3 .td:nth-child(5){
+            text-align: center;
+            color: white;
+            background-color: mediumpurple;
+        }
+        .t3--3 .td:nth-child(6){
+            text-align: center;
+        }
+        .row {
+            display: table-row;
+        }
+
+        .td {
+            display: table-cell;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="t1">
+        <caption>Tablas con table</caption>
+        <tr>
+            <td colspan="4">celda 1 1</td>
+            <td colspan="2">celda 1 2</td>
+            <td colspan="1">celda 1 3</td>
+        </tr>
+        <tr>
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td colspan="4">celda 2 1</td>
+            <td colspan="2">celda 2 2</td>
+            <td colspan="1">celda 2 3</td>
+        </tr>
+        <tr>
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td colspan="4">celda 3 1</td>
+            <td colspan="2">celda 3 2</td>
+            <td colspan="1">celda 3 3</td>
+        </tr>
+        <tr>
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td colspan="4">celda 4 1</td>
+            <td colspan="2">celda 4 2</td>
+            <td colspan="1">celda 4 3</td>
+        </tr>
+    </table>
+    <br>
+    <table class="t2">
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="2">1</td>
+            <td colspan="4">1</td>
+        </tr>
+        <tr>
+            <td colspan="4">2</td>
+            <td colspan="4">2</td>
+        </tr>
+        <tr>
+            <td colspan="3">3</td>
+            <td colspan="4">3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td colspan="2">3</td>
+            <td colspan="3">3</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Tabla con div</h3>
+    <div class="t3">
+        <div class="row">
+            <div class="td">1</div>
+            <div class="td">11</div>
+            <div class="td">111</div>
+            <div class="td">1111</div>
+        </div>
+    </div>
+    <div class="t3">
+        <div class="row">
+            <div class="td">2</div>
+            <div class="td">222222</div>
+            <div class="td">2222222222</div>
+        </div>
+    </div>
+    <div class="t3--3">
+        <div class="row">
+            <div class="td">3</div>
+            <div class="td">33</div>
+            <div class="td">333</div>
+            <div class="td">3333</div>
+            <div class="td">33333</div>
+            <div class="td">33333</div>
+            <div class="td">3333</div>
+            <div class="td">333</div>
+            <div class="td">33</div>
+            <div class="td">3</div>
+        </div>
+    </div>
+    <div class="t3">
+        <div class="row">
+            <div class="td">4 1</div>
+            <div class="td">4 2</div>
+            <div class="td">4 3</div>
+            <div class="td">4 4</div>
+            <div class="td">4 5</div>
+        </div>
+    </div>
+    <div class="t3">
+        <div class="row">
+            <div class="td">5 1</div>
+            <div class="td">5 2</div>
+            <div class="td">5 3</div>
+            <div class="td">5 4</div>
+            <div class="td">5 5</div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
