@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-7</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 99vw;
+            height: 100vh;
+        }
+
+        header {
+            height: 10vh;
+        }
+
+        table {
+            width: 100%;
+            height: 10vh;
+            border-collapse: collapse;
+        }
+
+        header td {
+            width: 33.33%;
+            height: 100%;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-bottom: 2px solid orange;
+        }
+
+        header td:nth-of-type(1) {
+            background-color: darkgreen;
+        }
+
+        header td:nth-of-type(2) {
+            background-color: cadetblue;
+        }
+
+        header td:nth-of-type(3) {
+            background-color: purple;
+        }
+
+        main {
+            width: 100%;
+            height: 80vh;
+            position: relative;
+        }
+
+        nav {
+            width: 20%;
+            height: 100%;
+            background-color: darkcyan;
+            position: absolute;
+            top: 0;
+            border-right: 4px solid orange;
+        }
+
+        ul {
+            list-style: none;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        li a {
+            display: block;
+            width: 100%;
+            height: 32px;
+            font-weight: bold;
+            color: white;
+            border-bottom: 1px solid grey;
+            text-decoration: none;
+            padding-left: 5px;
+        }
+
+        section {
+            position: absolute;
+            left: 20%;
+            width: 60%;
+            height: 100%;
+            border-right: 4px solid orange;
+        }
+
+        section article:nth-child(odd) {
+            background-color: skyblue;
+            height: 25vh;
+        }
+
+        section article:nth-child(even) {
+            background-color: aquamarine;
+            height: 30vh;
+        }
+
+        aside {
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            left: 80%;
+            background-color: orangered;
+        }
+
+        article {
+            padding: 10px;
+        }
+
+        article:nth-of-type(2) h2 {
+            text-align: center;
+        }
+
+        article:nth-of-type(2) h3 {
+            text-align: center;
+        }
+
+        article td:nth-of-type(1) {
+            padding: 10px;
+            width: 80%;
+        }
+
+        article td:nth-of-type(2) {
+            width: 20%;
+            text-align: center;
+        }
+
+        article table {
+            margin-top: 60px;
+        }
+        h3{
+            margin-top: 20px;
+        }
+        aside{
+            padding: 10px;
+            color: white;
+        }
+        footer{
+            border-top: 4px solid orange;
+            background-color:greenyellow;
+            width: 100%;
+            height: 10vh;
+            text-align: center;
+        }
+        address{
+            font-style: normal;
+        }
+        span{
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <table>
+                <tr>
+                    <td>🏭Logo empresa🗽</td>
+                    <td>🔎Buscar</td>
+                    <td>👤Cuenta, 🛒cesta</td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="">opcion 1</a></li>
+                    <li><a href="">opcion 2</a></li>
+                    <li><a href="">opcion 3</a></li>
+                    <li><a href="">opcion 4</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article>
+                    <h2>Mi Articulo 1</h2>
+                    <table>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                        <td><img src="http://picsum.photos/id/201/100/100" alt=""></td>
+                    </table>
+                </article>
+                <article>
+                    <h2>Mi Articulo < 2>
+                    </h2>
+                    <h3>Subtitulo 2 articulo</h3>
+                    <table>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                        <td><img src="http://picsum.photos/id/201/100/100" alt=""><span>Links</span></td>
+                    </table>
+                </article>
+                <article>
+                    <h2>Mi Articulo 3</h2>
+                    <table>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                        <td><img src="http://picsum.photos/id/201/100/100" alt=""></td>
+                    </table>
+                </article>
+            </section>
+            <aside>
+                <p>Aqui tenemos nuestra seccion de links interesanrtes</p>
+                <a href="">Link1</a>
+                <a href="">Link2</a> ...
+            </aside>
+        </main>
+        <footer>
+            <address>Diseño de Interfaces web</address>
+        </footer>
+    </div>
+</body>
+
+</html>

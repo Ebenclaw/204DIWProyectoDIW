@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-8-2-a</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        .container{
+            width: 600px;
+        }
+
+        .container a{
+            display: block;
+            background: #dddddd;
+            color: #4682b4;
+            font-weight: bold;
+            width: 100%;
+            text-decoration: none;
+            padding-left: 20px;
+            height: 48px;
+            line-height: 48px;
+            border-bottom: 1px solid #aaaaaa;
+        }
+
+        .container p{
+            width: 100%;
+            background: #eeeeee;
+            margin: 0 auto;
+            padding: 10px;
+        }
+    
+        p{
+            display: none;
+        }
+
+        p:target{
+            display: block;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#p1">Titulo 1</a>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus omnis amet ducimus voluptatum magni nulla facere non rerum est, quia ab sapiente libero. Quasi quae velit, totam corrupti natus ut.</p>
+        <a href="#p2">Titulo 2</a>
+        <p id="p2">Sequi, distinctio placeat. Sed debitis distinctio consequuntur omnis explicabo sint id ducimus, illo quisquam natus accusamus aliquam cupiditate harum molestias ad? Placeat temporibus assumenda nihil rem fugiat molestiae harum veritatis.</p>
+        <a href="#p3">Titulo 3</a>
+        <p id="p3">Atque natus ratione cumque explicabo reprehenderit! Laborum voluptas molestias nostrum, sint, labore saepe, cupiditate blanditiis atque aspernatur impedit at? Accusantium magni laborum, minima optio nobis dicta aliquam libero nihil suscipit.</p>
+        <a href="#p4">Cerrar</a>
+    </div>
+</body>
+
+</html>
