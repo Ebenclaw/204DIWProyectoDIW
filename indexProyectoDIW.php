@@ -129,8 +129,13 @@
             </tr>
             <tr>
                 <td>2-8-7 - Ejemplo menú Amazon</td>
-                <td></td>
+                <td><a href="practicas/pr-2-8-7.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
                 <td><a href="doc/2-8-7.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-1 - FlexBox 1</td>
+                <td></td>
+                <td><a href="doc/2-9-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
         </table>
     </main>
