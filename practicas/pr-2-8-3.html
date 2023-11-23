@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PR-2-8-3</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: consolas, monospace;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            .container{
+                width: 98vw;
+                height: 100vh;
+                background: darkslategrey;
+                padding-top: 6px;
+            }
+
+            nav{
+                width: 98%; height: 85px;
+                position: relative;
+                border: 2px solid #ccc;
+                margin: 0 auto;
+                background: #247777;
+            }
+
+            input{
+                display: none;
+            }
+
+            label{
+                display: block;
+                width: 64px; height: 64px;
+                background: #666;
+                position: relative;
+                left: 8px; top: 8px;
+                border-radius: 6px;
+                padding: 12px 0 0 8px;
+            }
+
+            span{
+                display: block;
+                background: white;
+                width: 48px; height: 8px;
+                margin-bottom: 8px;
+                border-radius: 2px;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0px;
+                height: 70vh;
+                width: 400px;
+                background: #247777;
+                position: absolute;
+                margin: 0 auto;
+                top: 84px;
+                left: -100%;
+                transition: all 0.7s ease-in-out;
+            }
+
+            a{
+                display: block;
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                text-decoration: none;
+                color: white;
+                border-bottom: 1px solid #ccc;
+                padding-left: 6px;
+            }
+
+            a:hover{
+                background-color: hotpink;
+            }
+
+            #hbgr:checked ~ ul{
+                left: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <nav>
+                <input type="checkbox" name="" id="hbgr">
+                <label for="hbgr">
+                    <span class="b1"></span>
+                    <span class="b2"></span>
+                    <span class="b3"></span>
+                </label>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado </a></li>
+                </ul>
+            </nav>
+        </section>
+    </body>
+</html>

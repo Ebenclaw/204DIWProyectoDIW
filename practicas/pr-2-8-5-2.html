@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PR-2-8-5-2</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: consolas, monospace;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+            .cilcle{
+                width: 200px;
+                height: 200px;
+                background: radial-gradient(at 0 0, yellow 20%,blue 80%);
+                border-radius: 50%;
+                position: relative;
+            }
+            .cilcle::after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 150px;
+                height: 20px;
+                background-color: blue;
+                bottom: -10px;
+                left: 50%;
+                box-shadow: 0 -3px 6px 10px blue;
+                opacity: .6;
+                border-radius: 50%;
+                z-index: -10;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="cilcle">
+
+            </div>
+        </section>
+    </body>
+</html>

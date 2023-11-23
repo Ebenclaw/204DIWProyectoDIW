@@ -64,8 +64,78 @@
             </tr>
             <tr>
                 <td>2-5 - Pseudo-clases y formularios</td>
-                <td></td>
+                <td><a href="practicas/pr-2-5.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
                 <td><a href="doc/2-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-6 - Modelo de cajas</td>
+                <td><a href="practicas/pr-2-6-1.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-6.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-7 - Posicionamiento CSS</td>
+                <td><a href="practicas/pr-2-7.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-7.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-1 - Pestañas: Ejercicio a</td>
+                <td><a href="practicas/pr-2-8-1-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-1 - Pestañas: Ejercicio b</td>
+                <td><a href="practicas/pr-2-8-1-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-2 - Ejemplos eventos click con CSS: Ejercicio a</td>
+                <td><a href="practicas/pr-2-8-2-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-2.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-2 - Ejemplos eventos click con CSS: Ejercicio b</td>
+                <td><a href="practicas/pr-2-8-2-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-2.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-3 - Ejemplo menu de barras</td>
+                <td><a href="practicas/pr-2-8-3.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-3.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-4 - Ejemplo menú con subniveles utilizando (position)</td>
+                <td><a href="practicas/pr-2-8-4.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-4.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-5 - Ejemplos con efectos :before y :after: Ejercicio 1</td>
+                <td><a href="practicas/pr-2-8-5-1.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-5 - Ejemplos con efectos :before y :after: Ejercicio 2</td>
+                <td><a href="practicas/pr-2-8-5-2.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-5 - Ejemplos con efectos :before y :after: Ejercicio 3</td>
+                <td><a href="practicas/pr-2-8-5-3.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-6 - EXAMEN: Prueba position</td>
+                <td><a href="practicas/pr-2-8-6.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-6.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-8-7 - Ejemplo menú Amazon</td>
+                <td><a href="practicas/pr-2-8-7.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-8-7.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-1 - FlexBox 1</td>
+                <td></td>
+                <td><a href="doc/2-9-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
         </table>
     </main>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEVA POSICIONAMIENTO</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .wrapper {
+            border: 1px solid grey;
+        }
+
+        h1 {
+            display: block;
+            width: 100%;
+            height: 64px;
+            text-align: center;
+            line-height: 64px;
+            border-bottom: 1px solid grey;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .producto {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+            width: 180px;
+            height: 300px;
+            background-color: #ccc;
+            overflow: hidden;
+            position: relative;
+        }
+
+        ul{
+            position: absolute;
+            left: -100%;
+            top: 120px;
+            list-style: none;
+            padding-left: 5px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        ul li{
+            display: inline-block;
+            width: 29px;
+            height: 29px;
+        }
+
+        .reloj:hover ~ ul{
+            left: 0;
+        }
+
+        .reloj2{
+            width: 180px;
+            height: 180px;
+        }
+
+        .precio {
+            font-weight: bold;
+            position: relative;
+        }
+
+        .precio img {
+            position: absolute;
+            width: 55%;
+            height: 40px;
+            top: -20px;
+            left: 0;
+        }
+
+        .precio p {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+
+        .producto>p {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 10px;
+            color: green;
+            top: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            width: 20%;
+        }
+
+        table img {
+            width: 29px;
+            height: 29px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>LISTADO DE ARTICULOS</h1>
+        <div class="container">
+            <article class="producto producto--1">
+                <img src="images/reloj.jpg" alt="reloj" class="reloj">
+                <ul class="menu">
+                    <li class="vista-previa"><img src="images/vista-previa.png" alt="vista-previa"></li>
+                    <li class="listadeseo"><img src="images/listadeseo.png" alt="listadeseo"></li>
+                    <li class="comparador"><img src="images/comparador-gris.png" alt="comparador"></li>
+                    <li class="configurador"><img src="images/configurador.png" alt="configurador"></li>
+                    <li class="carro"><img src="images/carro-gris.png" alt="carro"></li>
+                </ul>
+                <div class="precio">
+                    <img src="images/boton_amarillo.png">
+                    <p>65,99€</p>
+                </div>
+                <p>Reloj de cuarzo con correa de silicona informal...</p>
+                <table>
+                    <tr>
+                        <td><img src="images/novedad.png" alt="novedad"></td>
+                        <td><img src="images/topventas.png" alt="topventas"></td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="images/stock-3.png" alt="stock"></td>
+                    </tr>
+                </table>
+            </article>
+            <article class="producto producto--2">
+                <img src="images/apple-watch-6.jfif" alt="reloj2" class="reloj reloj2">
+                <ul class="menu">
+                    <li class="vista-previa"><img src="images/vista-previa.png" alt="vista-previa"></li>
+                    <li class="listadeseo"><img src="images/listadeseo.png" alt="listadeseo"></li>
+                    <li class="comparador"><img src="images/comparador-gris.png" alt="comparador"></li>
+                    <li class="configurador"><img src="images/configurador.png" alt="configurador"></li>
+                    <li class="carro"><img src="images/carro.png" alt="carro"></li>
+                </ul>
+                <div class="precio">
+                    <img src="images/boton_amarillo.png">
+                    <p>399,00€</p>
+                </div>
+                <p>Reloj de cuarzo con correa de silicona informal...</p>
+                <table>
+                    <tr>
+                        <td><img src="images/novedad.png" alt="novedad"></td>
+                        <td><img src="images/topventas.png" alt="topventas"></td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="images/stock-1.png" alt="stock"></td>
+                    </tr>
+                </table>
+            </article>
+            <article class="producto producto--3">
+                <img src="images/samsungGalaxyWatchActive2.png" alt="reloj3" class="reloj">
+                <ul class="menu">
+                    <li class="vista-previa"><img src="images/vista-previa.png" alt="vista-previa"></li>
+                    <li class="listadeseo"><img src="images/listadeseo.png" alt="listadeseo"></li>
+                    <li class="comparador"><img src="images/comparador.png" alt="comparador"></li>
+                    <li class="configurador"><img src="images/configurador.png" alt="configurador"></li>
+                    <li class="carro"><img src="images/carro-gris.png" alt="carro"></li>
+                </ul>
+                <div class="precio">
+                    <img src="images/boton_amarillo.png">
+                    <p>279,00€</p>
+                </div>
+                <p>Apple watch-6 caja 44mm aluminio y correa azul</p>
+                <table>
+                    <tr>
+                        <td><img src="images/novedad.png" alt="novedad"></td>
+                        <td><img src="images/topventas.png" alt="topventas"></td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="images/stock-3.png" alt="stock"></td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>

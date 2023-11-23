@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-8-2-b</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            font-weight: bold;
+        }
+        nav{
+            width: 70vw;
+            height: 70vh;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        input{
+            display: none;
+        }
+        nav label:nth-child(3){
+            display: block;
+            background-color: #008080;
+            width: 164px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            text-transform: uppercase;
+        }
+        menu{
+            width: 90%;
+            height: 100%;
+            background-color: rgb(36, 107, 74, 0.8);
+            position: absolute;
+            top:2.5rem;
+            /* display: none; */
+            left: -100%;
+            transition: left 0.5s ease-in-out;
+        }
+        menu label{
+            display: block;
+            width: 56px;
+            height: 56px;
+            background-color: red;
+            text-align: center;
+            line-height: 56px;
+            font-size: 2rem;
+            color:white;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        menu p{
+            width: 440px;
+            height: 220px;
+            background-color: #666666;
+            padding: 15px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -220px;
+            margin-top: -150px;
+        }
+        #open:checked ~ menu{
+            /* display: block; */
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>Ventana modal con :checked y radio buttons</h2>
+        <input type="radio" name="rb" id="open">
+        <label for="open">Mostrar Modal</label>
+        <input type="radio" name="rb" id="close">
+        <menu>
+            <label for="close">X</label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, saepe molestias sunt fugiat a dolorem quia tenetur? Culpa veniam voluptatum veritatis aliquam placeat. Ut, ex fugit. Ad obcaecati voluptates voluptatibus.</span><>Voluptates architecto nihil ab odit dolor, voluptatum qui nisi culpa praesentium sunt, corporis consectetur quis amet, quas magni est quisquam facilis ullam dicta ea autem obcaecati. Repudiandae mollitia architecto ea?            </p>
+        </menu>
+    </nav>
+</body>
+
+</html>

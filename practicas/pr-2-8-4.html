@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PR-2-8-4</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: consolas, monospace;
+                font-weight: bold;
+                margin: 0 auto;
+            }
+
+            section{
+                width: 100vw; height: 100vh;
+                background: burlywood;
+            }
+
+            a{
+                padding-left: 10px;
+            }
+
+            ul{
+                padding: 0;
+            }
+
+            .menu{
+                list-style: none;
+                width: 100%; height: 64px;
+                background: rgb(184, 228, 255);
+                margin: 0;
+                padding-left: 10px;
+                position: relative;
+            }
+
+            .menu li{
+                display: inline-block;
+                padding: 0;
+                position: relative;
+            }
+
+            .menu li a{
+                display: block;
+                width: 164px; height: 64px;
+                text-decoration: none;
+                line-height: 64px;
+                padding-left: 10px;
+            }
+
+            .sbm1, .sbm2{
+                width: 100%;
+                display: none;
+                position: absolute;
+            }
+
+            .menu li:hover .sbm1{
+                display: block;
+                background: rgb(184, 228, 255);
+            }
+
+            .sbm2{
+                left: 100%; top: 0;
+            }
+
+            .sbm1 li:hover .sbm2{
+                display: block;
+                background: rgb(184, 228, 255);
+            }
+
+            li:hover{
+                background:  rgb(205, 245, 255);
+            }
+
+            h2{
+                text-align: center;
+                padding-top: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Oficina</a></li>
+                <li>
+                    <a href="#">Instituto &#x25bc</a>
+                    <ul class="sbm1">
+                        <li><a href="#">Física-Química</a></li>
+                        <li><a href="#">Inglés</a></li>
+                        <li>
+                            <a href="#">Matemáticas &#x25ba</a>
+                            <ul class="sbm2">
+                                <li><a href="#">A - Aplicadas</a></li>
+                                <li><a href="#">B - Academicas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Alumnos</a></li>
+            </ul>
+            <h2>MENU DESPLEGABLE (DropDown) CON SUBNIVELES</h2>
+        </section>
+    </body>
+</html>

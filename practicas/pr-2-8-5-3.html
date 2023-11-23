@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PR-2-8-5-3</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .box{
+                width: 350px;
+                height: 200px;
+                background-color: goldenrod;
+                border-radius: 15px;
+                margin: 50px;
+                position: relative;
+            }
+            p:nth-of-type(1){
+                display: inline-block;
+                width: 60%;
+                font-weight: bold;
+                padding: 20px 0 0 40px;
+            }
+            p:nth-of-type(2){
+                display: inline-block;
+                width: 35%;
+                padding: 10px;
+                font-size: .8rem;
+                position: relative;
+                top: -10px;
+            }
+            img{
+                display: block;
+                margin: auto;
+                padding-top: 20px;
+                max-width: 100%;
+            }
+            .box::before{
+                content: "";
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid brown;
+                position: absolute;
+                top: -80px;
+                left: 130px;
+            }
+            .box::after{
+                content: "";
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid blue;
+                border-bottom: 20px solid transparent;
+                position: absolute;
+                bottom: -40px;
+                left: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>Caja</p>
+            <p>Parrafo 1</p>
+            <img src="http://picsum.photos/id/650/100/100" alt="imagen">
+        </div>
+    </body>
+</html>

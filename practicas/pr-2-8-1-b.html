@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-8-1-b</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        .container{
+            position: relative;
+        }
+        .container label:nth-of-type(n){
+            display: inline-block;
+            width: 128px;
+            height: 48px;
+            background-color: #6c78bb;
+            color: #eee;
+            text-align: center;
+            line-height: 48px;
+            border-radius: 5px 5px 0 0;
+            margin-right: 15px;
+        }
+        .container article:nth-of-type(n){
+            width: 800px;
+            height: 400px;
+            padding: 10px;
+            background-color: #ecd4b9;
+            position: absolute;
+        }
+        .container input{
+            display: none;
+        }
+        .container input:checked + label{
+            background-color: #87cefa;
+        }
+        .container input:checked + label + article{
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="radio" name="rb" id="rb1" checked>
+        <label for="rb1">Radio 1</label>
+        <article>Este es el contenido del RADIO 1</article>
+        <input type="radio" name="rb" id="rb2">
+        <label for="rb2">Radio 2</label>
+        <article>Este es el contenido del RADIO 2</article>
+        <input type="radio" name="rb" id="rb3">
+        <label for="rb3">Radio 3</label>
+        <article>Este es el contenido del RADIO 3</article>
+        <input type="radio" name="rb" id="rb4">
+        <label for="rb4">Radio 4</label>
+        <article>Este es el contenido del RADIO 4</article>
+        <input type="radio" name="rb" id="rb5">
+        <label for="rb5">Radio 5</label>
+        <article>Este es el contenido del RADIO 5</article>
+    </div>
+</body>
+
+</html>
