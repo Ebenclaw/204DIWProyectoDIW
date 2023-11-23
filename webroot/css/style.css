@@ -12,6 +12,10 @@ html{
     width: 100%;
     height: 310%;
 }
+.htmlError{
+    width: 100%;
+    height: 100%;
+}
 body{
     width: auto; 
     height: auto;
@@ -62,6 +66,22 @@ li a{
 }
 li:hover{
     background-color: #f8afb8;
+}
+.error{
+    color: red;
+}
+.imgError{
+    display: block;
+    width: 600px;
+    margin: auto;
+    margin-top: 200px;
+}
+.divError{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F73C90;
+    text-align: center;
 }
 table{
     width: 75%;
