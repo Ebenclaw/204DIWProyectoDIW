@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pr-2-9-4</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            img{
+                max-width: 100%;
+                display: block;
+            }
+
+            .container{
+                display: flex;
+                flex-flow: row wrap;
+                gap: 20px; 
+                justify-content: space-evenly;
+            }
+
+            .card{
+                position: relative;
+                width: 224px; height: 352px;
+                outline: 1px solid #ccc;
+                display: flex;
+                flex-flow: column;
+                overflow: hidden;
+            }
+
+            .card:nth-child(1) .product{
+                background-image: url(images/reloj.jpg);
+            }
+
+            .card:nth-child(2) .product{
+                background-image: url(images/apple-watch-6.jfif);
+            }
+
+            .card:nth-child(3) .product{
+                background-image: url(images/samsungGalaxyWatchActive2.png);
+            }
+
+            .card .product{
+                position: relative;
+                height: 60%;
+                background-size: contain;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-end;
+                padding-bottom: 18px;
+            }
+
+            .price{
+                position: absolute;
+                top: 53%;
+                width: 95px; height: 35px;
+                background-image: url(images/boton_amarillo.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            span{
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+
+            .descript{
+                height: 152px;
+                display: flex;
+                flex-flow: column nowrap;
+                background: #d1c5c5;
+                justify-content: space-around;
+            }
+
+            .descript__text{
+                font-weight: bold;
+                font-family: 'Segoe UI', sans-serif;
+                color: #44a32c;
+                font-size: .9rem;
+            }
+
+            .descript__icons, .info{
+                display: flex;
+                flex-flow: row nowrap;
+                position: relative;
+                justify-content: space-evenly;
+            }
+
+            .descript__icons img, .info img{
+                width: 45px;
+            }
+
+            .info{
+                transition: all 1s ease;
+                left: -200%;
+            }
+
+            .product:hover .info{
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <article class="product">
+                    <div class="info">
+                        <img src="images/vista-previa-gris.png" alt="">
+                        <img src="images/listadeseo.png" alt="">
+                        <img src="images/comparador.png" alt="">
+                        <img src="images/configurador.png" alt="">
+                        <img src="images/carro.png" alt="">
+                    </div>
+                </article>
+                <article class="price">
+                    <span>65.90€</span>
+                </article>
+                <article class="descript">
+                    <div class="descript__text">
+                       RELOJ DE CUARZO CON CORREA DE SILICONA INFORMAL...
+                    </div>
+                    <div class="descript__icons">
+                        <img src="images/novedad.png" alt="">
+                        <img src="images/topventas.png" alt="">
+                        <img>
+                        <img>
+                        <img src="images/stock-3.png" alt="">
+                     </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="product">
+                    <div class="info">
+                        <img src="images/vista-previa.png" alt="">
+                        <img src="images/listadeseo.png" alt="">
+                        <img src="images/comparador-gris.png" alt="">
+                        <img src="images/configurador.png" alt="">
+                        <img src="images/carro.png" alt="">
+                    </div>
+                </article>
+                <article class="price">
+                    <span>399.00€</span>
+                </article>
+                <article class="descript">
+                    <div class="descript__text">
+                       APPLE WATCH-6 CAJA 44MM ALUMINIO Y CORREA AZUL
+                    </div>
+                    <div class="descript__icons">
+                        <img src="images/novedad.png" alt="">
+                        <img>
+                        <img>
+                        <img>
+                        <img src="images/stock-1.png" alt="">
+                     </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="product">
+                    <div class="info">
+                        <img src="images/vista-previa.png" alt="">
+                        <img src="images/listadeseo.png" alt="">
+                        <img src="images/comparador.png" alt="">
+                        <img src="images/configurador.png" alt="">
+                        <img src="images/carro-gris.png" alt="">
+                    </div>
+                </article>
+                <article class="price">
+                    <span>279.90€</span>
+                </article>
+                <article class="descript">
+                    <div class="descript__text">
+                       SAMSUG GALAXY WATCH ACTIVE2 40MM BT
+                    </div>
+                    <div class="descript__icons">
+                        <img src="images/novedad.png" alt="">
+                        <img src="images/topventas.png" alt="">
+                        <img>
+                        <img>
+                        <img src="images/stock-3.png" alt="">
+                     </div>
+                </article>
+            </div>
+        </div>
+    </body>
+</html>

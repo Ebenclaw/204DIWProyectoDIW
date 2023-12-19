@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-9-3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container{
+            width: 450px;
+            height: 350px;
+            background-color: #dbc8c8;
+            display: flex;
+            align-items: flex-end;
+            padding-left: 35px;
+            gap: 10px;
+        }
+
+        .container article{
+            background-color: purple;
+            color: white;
+            flex: 0 1 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container article:nth-child(1){
+            height: 350px;
+        }
+
+        .container article:nth-child(2){
+            height: 280px;
+        }
+
+        .container article:nth-child(3){
+            height: 220px;
+        }
+
+        /****************************/
+
+        .wrapper{
+            width: 450px; height: 350px;
+            background: lawngreen;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4px;
+            gap: 30px;
+        }
+
+        .wrapper article:nth-child(n){
+            position: relative;
+            width: 100px; height: 100px;
+            background: red;
+            border-radius: 6px;
+            display: flex;
+            padding: 5px;
+        }
+
+        .punto{
+            width: 25px; height: 25px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .dado1{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dado2 :nth-child(2){
+            align-self: flex-end;
+        }
+
+        .dado2{
+            justify-content: space-between;
+        }
+
+        .dado3 :nth-child(2){
+            align-self: center;
+        }
+
+        .dado3 :nth-child(3){
+            align-self: flex-end;
+        }
+
+        .dado3{
+            justify-content: space-between;
+        }
+
+        /* .dado4{
+            flex-flow: wrap;
+            gap: 40px;
+        } */
+
+        .dado4{
+            flex-flow: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .dado5 :nth-child(2){
+            margin-top: 32.5px;
+        }
+
+        .dado5{
+            flex-flow: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .dado6{
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        /****************************/
+
+        .menu{
+            width: 600px; height: 100px;
+            background: bisque;
+            margin-top: 4px;
+            display: flex;
+        }
+
+        .menu li:nth-child(1){
+            background: #266400;
+        }
+
+        .menu li:nth-child(2){
+            background: #f1a500;
+        }
+
+        .menu li:nth-child(3){
+            background: #5882b5;
+        }
+
+        .menu li:nth-child(4){
+            background: #770282;
+        }
+
+        li{
+            list-style: none;
+            width: 200px;
+            height: 100px;
+            flex: 1;
+            transition: all 0.5s ease-in-out;
+        }
+        a{
+            text-decoration: none;
+            height: 100px;
+            color: white; font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-90deg);
+            transition: all 0.5s ease-in-out;
+        }
+        .menu li:hover{
+            flex: 6;
+        }
+        .menu li:hover a{
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+    </section>
+    <section class="wrapper">
+        <article class="dado1">
+            <div class="punto"></div>
+        </article>
+        <article class="dado2">
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </article>
+        <article class="dado3">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </article>
+        <article class="dado4">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </article>
+        <article class="dado5">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </article>
+        <article class="dado6">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </article>
+    </section>
+    <section class="menu">
+        <li><a href="#">Centro</a></li>
+        <li><a href="#">Profesores</a></li>
+        <li><a href="#">Asignaturas</a></li>
+        <li><a href="#">Cursos</a></li>
+    </section>
+</body>
+</html>

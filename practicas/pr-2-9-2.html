@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-9-2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            font-weight: bold;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        header{
+            background-color: #aabbcc;
+            flex-basis: 100%;
+            height: 10vh;
+        }
+        nav{
+            background-color: #bbbb11;
+            flex-basis: 100%;
+            height: 6vh;
+        }
+        main{
+            background-color: cyan;
+            flex-basis: 100%;
+            height: 70vh;
+        }
+        aside{
+            background-color: #deb887;
+            flex-basis: 100%;
+            height: 8vh;
+        }
+        footer{
+            background-color: tomato;
+            flex-basis: 100%;
+            height: 6vh;
+        }
+        @media all and (min-width:640px){
+            main{
+                flex-basis: 75%;
+                height: 78vh;
+            }
+            aside{
+                flex-basis: 25%;
+                height: 78vh;
+            }
+        }
+        @media all and (min-width:1024px){
+            nav{
+                flex-basis: 15%;
+                height: 84vh;
+            }
+            main{
+                flex-basis: 65%;
+                height: 84vh;
+            }
+            aside{
+                flex-basis: 20%;
+                height: 84vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>Encabezado</header>
+        <nav>Menu</nav>
+        <main>Contenido perincipal</main>
+        <aside>Barra lateral de publicacion</aside>
+        <footer>Pie de pagina</footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-9-7</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            max-width: 100%;
+            display: block;
+        }
+        .container{
+            width: 98vw;
+            height: 98vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .carousel{
+            position: relative;
+            width: 600px;
+            height: 400px;
+            outline: 1px solid black;
+            overflow: hidden;
+        }
+        .fotos{
+            display: flex;
+            width: 2400px;
+            position: relative;
+            transition: all 1s ease;
+        }
+        section a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: mediumseagreen;
+            position: absolute;
+            z-index: 10;
+            bottom: 40px;
+            left: 170px;
+        }
+        section a:nth-child(2){
+            left: 240px;
+        }
+        section a:nth-child(3){
+            left: 310px;
+        }
+        section a:nth-child(4){
+            left: 380px;
+        }
+        section a:nth-child(1):focus-within{
+            background-color: brown;
+        }
+        section a:nth-child(1):focus-within ~ .fotos{
+            transform: translateX(0px);
+        }
+        section a:nth-child(2):focus-within ~ .fotos{
+            transform: translateX(-600px);
+        }
+        section a:nth-child(3):focus-within ~ .fotos{
+            transform: translateX(-1200px);
+        }
+        section a:nth-child(4):focus-within ~ .fotos{
+            transform: translateX(-1800px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CAROUSEL CON FLEX</h1>
+        <section class="carousel">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <main class="fotos">
+                <img src="http://picsum.photos/id/500/600/400">
+                <img src="http://picsum.photos/id/501/600/400">
+                <img src="http://picsum.photos/id/502/600/400">
+                <img src="http://picsum.photos/id/503/600/400">
+            </main>
+        </section>
+    </div>
+</body>
+</html>
