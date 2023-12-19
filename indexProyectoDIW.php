@@ -134,8 +134,38 @@
             </tr>
             <tr>
                 <td>2-9-1 - FlexBox 1</td>
-                <td></td>
+                <td><a href="practicas/pr-2-9-1.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
                 <td><a href="doc/2-9-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-2 - FlexBox 2</td>
+                <td><a href="practicas/pr-2-9-2.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-9-2.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-3 - FlexBox 3</td>
+                <td><a href="practicas/pr-2-9-3.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-9-3.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-4 - PRUEBA: Examen 2-8-6 en flexbox</td>
+                <td><a href="practicas/pr-2-9-4.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-9-4.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-5 - FlexBox 5</td>
+                <td><a href="practicas/pr-2-9-5.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-9-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-6 - FlexBox 6</td>
+                <td><a href="practicas/pr-2-9-6.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-9-6.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-9-7 - FlexBox 7 Carousel</td>
+                <td><a href="practicas/pr-2-9-7.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-9-7.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
         </table>
     </main>
