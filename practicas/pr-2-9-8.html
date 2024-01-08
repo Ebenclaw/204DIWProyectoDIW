@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr-2-9-8</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 300vh;
+            background-color: #333;
+        }
+
+        header {
+            position: relative;
+            width: 100vw;
+            height: 48px;
+            background: black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            padding-right: 50px;
+            z-index: 10;
+        }
+
+        header * {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logobyd{
+            height: 1.8rem;
+        }
+
+        nav {
+            margin: 0;
+            position: sticky;
+            top: 0px;
+            background: #44484B;
+            height: 72px;
+            width: 100vw;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 5;
+        }
+
+        a {
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav>a {
+            flex: 1 100%;
+            height: 100%;
+            display: flex;
+            color: white;
+            background: #44484B;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mnu {
+            position: relative;
+            z-index: 6;
+        }
+
+        .sbmnu {
+            position: absolute;
+            left: 0;
+            top: 72px;
+            z-index: 4;
+        }
+
+        .mnu2__sbmnu, .mnu5__sbmnu {
+            width: 100vw;
+            height: 350px;
+            padding-top: 25px;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            transition: all 0.5s ease;
+            transform: translateY(-200%);
+        }
+
+        .mnu2__sbmnu>a {
+            display: block;
+            color: #333;
+        }
+
+        .model {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-around;
+            transition: all 0.5s ease-in;
+        }
+
+        .model img{
+            transition: all 0.5s ease;
+            width: 150px;
+            height: 120px;
+        }
+
+        .model a{
+            color: #333;
+        }
+
+        .model:hover{
+            box-shadow: 0px 0px 15px gray;
+        }
+
+        .model img:hover{
+            transform: scale(1.2);
+        }
+
+        .mnu2:hover~.mnu2__sbmnu,
+        .mnu2__sbmnu:hover,
+        .mnu5:hover~.mnu5__sbmnu,
+        .mnu5__sbmnu:hover {
+            transform: translateY(0%);
+        }
+
+        main {
+            /* display: flex; */
+            
+        }
+
+        .fondocoche {
+            /* flex: 1; */
+            width: 100%;
+            height: 100%;
+        }
+
+        .mnu2__sbmnu>a::after{
+            display: block;
+            content: "";
+            width: 100%;
+            height: 2.5px;
+            background-color: #333;
+            display: none;
+        }
+
+        .mnu2__sbmnu>a:focus-within::after{
+            display: block;
+        }
+        .mnu2__sbmnu>a:focus-within + .model{
+            z-index: 55;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <input type="search" placeholder="Buscar">
+            <a href="#">GLOBAL</a>
+            <a href="#">PAIS</a>
+        </header>
+        <nav>
+            <a class="mnu mnu1" href="#"><img class="logobyd" src="images/byd.png" alt="BYD"></a>
+            <a class="mnu mnu2" href="#">MODELOS ▼</a>
+            <a class="mnu mnu3" href="#">ACERCA DE BYD</a>
+            <a class="mnu mnu4" href="#">ENCUENTRA TU CONCESIONARIO</a>
+            <a class="mnu mnu5" href="#">MENÚ</a>
+            <div class="sbmnu mnu1__sbmnu"></div>
+            <div class="sbmnu mnu2__sbmnu">
+                <a href="#">BYD DOLPHIN</a>
+                <div class="model">
+                    <!-- http://picsum.photos/id/300/100/100 -->
+                    <img src="images/dolphin.png" alt="modelo1">
+                    <a href="#">BYD DOLPHIN</a>
+                </div>
+                <a href="#">BYD SEAL</a>
+                <div class="model">
+                    <img src="images/seal.png" alt="modelo2">
+                    <a href="#">BYD SEAL</a>
+                </div>
+                <a href="#">BYD ATT03</a>
+                <div class="model">
+                    <img src="images/att03.png" alt="modelo3">
+                    <a href="#">BYD ATT03</a>
+                </div>
+                <a href="#">BYD HAN</a>
+                <div class="model">
+                    <img src="images/han.png" alt="modelo4">
+                    <a href="#">BYD HAN</a>
+                </div>
+                <a href="#">BYD TANG</a>
+                <div class="model">
+                    <img src="images/tang.png" alt="modelo5">
+                    <a href="#">BYD TANG</a>
+                </div>
+            </div>
+            <div class="sbmnu mnu5__sbmnu">
+
+            </div>
+        </nav>
+        <main>
+            <img class="fondocoche" src="images/fondo.png" alt="coche">
+            <img class="fondocoche" src="images/fondo1.png" alt="coche1">
+            <img class="fondocoche" src="images/fondo2.png" alt="coche2">
+        </main>
+    </section>
+</body>
+
+</html>

@@ -167,6 +167,11 @@
                 <td><a href="practicas/pr-2-9-7.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
                 <td><a href="doc/2-9-7.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
+            <tr>
+                <td>2-9-8 - Byd.com</td>
+                <td><a href="practicas/pr-2-9-8.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="https://www.byd.com/es-es" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
         </table>
     </main>
     <footer>
