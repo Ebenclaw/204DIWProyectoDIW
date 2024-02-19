@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: consolas, monospace;
+                font-weight: bold;
+            }
+
+            body{
+                background: #cccccc;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .menu1, .menu2{
+                width: 500px; height: 80px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                overflow: hidden;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .menu1{
+                background: #3fa46a;
+            }
+
+            .menu1 a{
+                border-top: 4px solid white;
+                border-bottom: 4px solid white;
+                padding: 32px 0;
+            }
+
+            .menu1 a:hover{
+                padding: 5px 0;
+            }
+
+            .menu2{
+                background: #5175c0;
+            }
+
+            .menu2 a:hover{
+                color: yellow;
+                background: #ced8ed;
+                padding: 14px 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu1">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Conntact</a>
+            <a href="#">Shop</a>
+        </div>
+        <div class="menu2">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Conntact</a>
+            <a href="#">Shop</a>
+        </div>
+    </body>
+</html>

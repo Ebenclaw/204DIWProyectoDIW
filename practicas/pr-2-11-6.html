@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-11-6</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 600px;
+            height: 600px;
+            background-color: antiquewhite;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cubo, .face{
+            width: 300px;
+            height: 300px;
+        }
+        .cubo{
+            transform-style: preserve-3d;
+            /* background-color: pink; */
+            position: relative;
+            transform: perspective(700px) rotateX(-20deg) rotateY(-30deg);
+            animation: girar_XY 4s linear infinite;
+        }
+        .face{
+            position: absolute;
+        }
+        .left{
+            background-color: green;
+            transform: rotateY(90deg) translateZ(-150px);
+        }
+        .back{
+            background-color: purple;
+            transform: translateZ(-150px);
+        }
+        .front{
+            background-color: red;
+            transform: translateZ(150px);
+        }
+        .bottom{
+            background-color: grey;
+            transform: rotateX(90deg) translateZ(-150px);
+        }
+        .top{
+            background-color: yellow;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .right{
+            background-color: blue;
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        @keyframes girar_XY{
+            from{
+                transform: rotateX(-180deg) rotateY(-180deg);
+            }
+            to{
+                transform: rotateX(180deg) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="cubo">
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+    </section>
+</body>
+</html>

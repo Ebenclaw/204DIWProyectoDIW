@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-11-3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            --v:0;
+        }
+        .container{
+            width: 600px;
+            height: 600px;
+            background-color: #aaaaaa;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 125px);
+            grid-template-rows: 100px 100px 1fr;
+            justify-content: center;
+            align-content: center;
+        }
+        h1{
+            grid-column: 1/-1;
+        }
+        input{
+            display: none;
+        }
+        label{
+            width: 60px;
+            height: 64px;
+            border: 2px solid yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .helice{
+            grid-column: 1/-1;
+            margin: auto;
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: red;
+            box-shadow: 100px 0 0 red,
+                        -100px 0 0 red,
+                        0 100px yellow,
+                        0 -100px yellow;
+            transition: all 2s linear;
+            animation: girar var(--v) linear infinite;
+        }
+        @keyframes girar {
+            from{
+                transform: rotate(0deg);
+            }to{
+                transform: rotate(360deg);
+            }
+        }
+        #rd1:checked ~ .helice{
+            --v:4s;
+        }
+        #rd2:checked ~ .helice{
+            --v:2s;
+        }
+        #rd3:checked ~ .helice{
+            --v:0.75s;
+        }
+        #stop:checked ~ .helice{
+            --v:0s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SELECCIONE LA VELOCIDAD</h1>
+        <input type="radio" name="rd" id="rd1"><label for="rd1" id="lbrd1">1x</label>
+        <input type="radio" name="rd" id="rd2"><label for="rd2" id="lbrd2">2x</label>
+        <input type="radio" name="rd" id="rd3"><label for="rd3" id="lbrd3">3x</label>
+        <input type="radio" name="rd" id="stop"><label for="stop" id="lbrd4">STOP</label>
+        <div class="helice"></div>
+    </div>
+</body>
+</html>

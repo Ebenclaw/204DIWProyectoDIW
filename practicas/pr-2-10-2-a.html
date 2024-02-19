@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PR-2-1O-2</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: sans-serif;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .wrapper{
+                width: 90vw; height: 90vh;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 20% 15% 40% 15% 10%;
+            }
+
+            .wrapper *{
+                display: flex;
+                justify-content: center;
+            }
+
+            .wrapper header{
+                background: #aabbcc;
+            }
+
+            .wrapper nav{
+                background: #ef5350;
+            }
+
+            .wrapper main{
+                background: #004040;
+            }
+
+            .wrapper aside{
+                background: #aeea00;
+            }
+
+            .wrapper footer{
+                background: #546e7a;
+            }
+
+            @media (width>=640px) and (width<=1024){
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>header</header>
+            <nav>nav</nav>
+            <main>main</main>
+            <aside>aside</aside>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>

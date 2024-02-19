@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-11-1-2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            width: 95vw;
+            height: 95vh;
+            padding: 50px;
+            padding-left: 100px;
+        }
+
+        .box {
+            width: 900px;
+            height: 599px;
+            background-image: url('images/tigre.jpg');
+            border: 5px solid red;
+            overflow: hidden; 
+        }
+        .capa{
+            width: 895px;
+            height: 594px;
+            background-color: rgba(255,0,0,0.3);
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(900px);
+            transition: 1s all 0s;
+        }
+        h1{
+            position: relative;
+            top: -350px;
+            left: 350px;
+            transform: translateX(900px);
+            transition: 1s all 1s;
+            font-size: 5rem;
+        }
+        p{
+            position: relative;
+            top: -350px;
+            left: 330px;
+            transform: translateX(900px);
+            transition: 1s all 2s;
+            font-size: 2rem;
+        }
+        .box:hover .capa{
+            transform: translateX(0px);
+        }
+        .box:hover h1{
+            transform: translateX(0px);
+        }
+        .box:hover p{
+            transform: translateX(0px);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <article class="box">
+            <div class="capa"></div>
+            <h1>Titulo</h1>
+            <p>Esto es una pueba</p>
+        </article>
+    </section>
+</body>
+
+</html>

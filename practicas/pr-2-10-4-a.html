@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-10-4-A
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 26/01/2024
+-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PR-2-10-4-A</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      width: 600px;
+      height: 100vh;
+      margin: auto;
+      background-color: blanchedalmond;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .flex {
+      display: flex;
+      width: 400px;
+      height: 300px;
+      flex-flow: column wrap;
+      margin: auto;
+    }
+
+    .flex div {
+      width: 100px;
+      flex: 0 0 60px;
+    }
+
+    .flex div:nth-child(odd) {
+      background-color: #a6d4d4;
+    }
+
+    .flex div:nth-child(even) {
+      background-color: #97bc8e;
+    }
+
+    .flex div:nth-child(n+11) {
+      width: 200px;
+    }
+
+    /******************************************/
+
+    .grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 100px 100px 200px;
+      grid-template-rows: repeat(5,60px);
+      grid-auto-flow: column;
+    }
+
+    .grid div:nth-child(odd) {
+      background-color: #a6d4d4;
+    }
+
+    .grid div:nth-child(even) {
+      background-color: #97bc8e;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <h2>CON FLEX</h2>
+    <article class="flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </article>
+    <h2>CON GRID</h2>
+    <article class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </article>
+  </section>
+</body>
+
+</html>

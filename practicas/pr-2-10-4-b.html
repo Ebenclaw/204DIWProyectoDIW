@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-10-4-B
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 26/01/2024
+-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PR-2-10-4-B</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      width: 98vw;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+
+    ul.menu {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5,1fr) 100px;
+      grid-auto-rows: 64px;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    ul li {
+      height: 64px;
+      width: 100%;
+      background-color: #546c30;
+      
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid red;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      height: 100%;
+    }
+
+    a:hover {
+      background-color: violet;
+    }
+
+    .sbm1 {
+      display: grid;
+      grid-auto-columns: 1fr;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      display: none;
+    }
+
+    .sbm2 {
+      width: 100%;
+      display: grid;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: none;
+    }
+
+    .sbm1 > li {
+      position: relative;
+    }
+
+    .menu > li:hover .sbm1{
+      display: grid;
+    }
+
+    .sbm1 > li:hover .sbm2{
+      display: grid;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <ul class="menu">
+      <li><a href="#">Option 1</a></li>
+      <li><a href="#">Option 2</a></li>
+      <li><a href="#">Option 3</a>
+        <ul class="sbm1">
+          <li><a href="1">Subop 1</a></li>
+          <li><a href="2">Subop 2</a>
+            <ul class="sbm2">
+              <li><a href="#">sbm2 Subop 1</a></li>
+              <li><a href="#">sbm2 Subop 2</a></li>
+              <li><a href="#">sbm2 Subop 3</a></li>
+            </ul>
+          </li>
+          <li><a href="3">Subop 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Option 4</a></li>
+      <li><a href="#">Option 5</a></li>
+    </ul>
+  </section>
+</body>
+
+</html>

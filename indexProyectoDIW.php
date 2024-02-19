@@ -172,6 +172,106 @@
                 <td><a href="practicas/pr-2-9-8.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
                 <td><a href="https://www.byd.com/es-es" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
+            <tr>
+                <td>2-10-1 - Grid vs Flex 1: Ejercicio a</td>
+                <td><a href="practicas/pr-2-10-1-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-2 - Grid vs Flex 1: Ejercicio b</td>
+                <td><a href="practicas/pr-2-10-1-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-2 - Grid 2: Ejercicio a</td>
+                <td><a href="practicas/pr-2-10-2-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-2.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-2 - Grid 2: Ejercicio b</td>
+                <td><a href="practicas/pr-2-10-2-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-2.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-3 - Grid 3: Ejercicio a</td>
+                <td><a href="practicas/pr-2-10-3-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-3.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-3 - Grid 3: Ejercicio b</td>
+                <td><a href="practicas/pr-2-10-3-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-3.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-4 - Grid 6: Ejercicio a</td>
+                <td><a href="practicas/pr-2-10-4-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-4.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-4 - Grid 6: Ejercicio b</td>
+                <td><a href="practicas/pr-2-10-4-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-4.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-10-4 - Grid 6: Ejercicio c</td>
+                <td><a href="practicas/pr-2-10-4-c.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-10-4.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-1 - Transiciones 1: Ejercicio 1</td>
+                <td><a href="practicas/pr-2-11-1-1.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-1 - Transiciones 1: Ejercicio 2</td>
+                <td><a href="practicas/pr-2-11-1-2.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-1.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-2 - Transiciones 2</td>
+                <td><a href="practicas/pr-2-11-2.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-2.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-3 - Transiciones 3: Ejercicio a</td>
+                <td><a href="practicas/pr-2-11-3-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-3.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-3 - Transiciones 3: Ejercicio b</td>
+                <td><a href="practicas/pr-2-11-3-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-3.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-4 - Transiciones 4</td>
+                <td><a href="practicas/pr-2-11-4.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-4.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-5 - Animaciones 1: Ejercicio a</td>
+                <td><a href="practicas/pr-2-11-5-a.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-5 - Animaciones 1: Ejercicio b</td>
+                <td><a href="practicas/pr-2-11-5-b.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-5 - Animaciones 1: Ejercicio c</td>
+                <td><a href="practicas/pr-2-11-5-c.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-5.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-6 - Animaciones 2</td>
+                <td><a href="practicas/pr-2-11-6.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-6.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>2-11-7 - Animaciones 3</td>
+                <td><a href="practicas/pr-2-11-7.html" target="_blank"><img src="webroot/image/play.png" alt="play"/></td>
+                <td><a href="doc/2-11-7.pdf" target="_blank"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
         </table>
     </main>
     <footer>

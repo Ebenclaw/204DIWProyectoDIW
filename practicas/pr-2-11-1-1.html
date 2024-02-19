@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-11-1-1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 95vw;
+            height: 95vh;
+            padding: 50px;
+            padding-left: 100px;            
+            background-color: #ddd;
+        }
+        .box{
+            width: 220px;
+            height: 300px;
+            background-color: rgb(123, 185, 161);            
+            box-shadow: 5px 5px 5px darkred;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 1s width 0s, 1s height 1s, 1s border-radius 2s,
+            1s background 3s, 1s border 4s, 1s padding 5s, 1s box-shadow 6s;
+        }
+        h1{
+            color: rgb(255, 188, 140);
+        }
+        p{
+            transform: translateX(220px);
+            color: white;
+        }
+        .box:hover{
+            width: 270px;
+            height: 350px;
+            background-color:indigo; 
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 15px 15px 10px 15px #5c290a;
+            border: 2px solid rgb(255, 188, 140);
+        }
+        .box:hover p{
+            transform: translateX(0px);
+        }
+        p:nth-of-type(1){transition: 1s all 0s;}
+        p:nth-of-type(2){transition: 1s all 1s;}
+        p:nth-of-type(3){transition: 1s all 2s;}
+        p:nth-of-type(4){transition: 1s all 3s;}
+        p:nth-of-type(5){transition: 1s all 4s;}
+        p:nth-of-type(6){transition: 1s all 5s;}
+        p:nth-of-type(7){transition: 1s all 6s;}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="box">
+            <h1>Voy cambiando</h1>
+            <p>Tamaño ancho</p>
+            <p>Tamaño largo</p>
+            <p>Border radius</p>
+            <p>Color de fondo</p>
+            <p>Borde</p>
+            <p>Padding</p>
+            <p>Sombra</p>
+        </article>
+    </section>
+</body>
+</html>

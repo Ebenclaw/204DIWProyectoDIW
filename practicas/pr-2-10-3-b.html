@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-10-3-b</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            /* width: 300px; */
+            height: 280px;
+        }
+
+        .container {
+            width: 95vw;
+            height: 95vh;
+            display: grid;
+            align-content: center;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        header img{
+            height: 100px;
+            width: 100px;
+            margin-left: 250px;
+        }
+        .cards {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); 
+            justify-content: center;
+            grid-auto-rows: 1fr;
+        }
+
+        .card {
+            width: 100%;
+            transition: all 0.5s ease;
+            display: grid;
+            grid-template-columns: 60% 20% 20%;
+        }
+
+        .card img{
+            height: 250px;
+        }
+
+        .card h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:lightskyblue;
+        }
+
+        .card p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:steelblue;
+        }
+
+        .card img:hover {
+            transition: all 0.5s ease;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <img src="images/fondo2.png" alt="card image">
+            <img src="images/fondo2.png" alt="card image">
+            <img src="images/fondo2.png" alt="card image">
+        </header>
+        <div class="cards">
+            <article class="card">
+                <img src="images/fondo2.png" alt="card image">
+                <h2>Imagen 1</h2>
+                <p class="descrip">Lorem ipsum</p>                
+            </article>
+            <article class="card">
+                <img src="images/fondo2.png" alt="card image">
+                <h2>Imagen 2</h2>
+                <p class="descrip">Lorem ipsum</p>                
+            </article>
+            <article class="card">
+                <img src="images/fondo2.png" alt="card image">
+                <h2>Imagen 3</h2>
+                <p class="descrip">Lorem ipsum</p>                
+            </article>
+            <article class="card">
+                <img src="images/fondo2.png" alt="card image">
+                <h2>Imagen 4</h2>
+                <p class="descrip">Lorem ipsum</p>                
+            </article>
+            <article class="card">
+                <img src="images/fondo2.png" alt="card image">
+                <h2>Imagen 5</h2>
+                <p class="descrip">Lorem ipsum</p>                
+            </article>
+            <article class="card">
+                <img src="images/fondo2.png" alt="card image">
+                <h2>Imagen 6</h2>
+                <p class="descrip">Lorem ipsum</p>                
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>
